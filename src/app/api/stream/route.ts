@@ -3,6 +3,7 @@ import { NextRequest } from 'next/server';
 import { v4 as uuidv4 } from 'uuid';
 import { GraphState, AgentLog, ResearchDepth } from '@/types/agent';
 import { ResearchGraph } from '@/lib/agents/graph';
+export const maxDuration = 60; // Vercel Pro = 60s, Hobby = 10s
 
 export const graphStates = new Map<string, GraphState>();
 
